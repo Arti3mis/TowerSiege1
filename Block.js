@@ -1,6 +1,6 @@
         class Block{
     constructor(x,y,width,height,angle){
-    var options = { restitution:0.1,friction:1.0,density:0.1}
+    var options = { restitution:0.1,friction:1.0,density:2.0}
     this.width = width; 
     this.height = height;
     this.body = Bodies.rectangle(x,y,width,height,options);   
@@ -13,7 +13,6 @@
     translate(pos.x,pos.y);
     rotate(angle);
     rectMode(CENTER);
-    fill("blue")
     rect(0,0,this.width,this.height);
     pop();
 
